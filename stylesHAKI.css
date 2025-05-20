@@ -1,0 +1,169 @@
+/* Reset dan transisi dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #5b92b3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body.dark .header {
+  background-color: #1e3a4c;
+}
+
+/* Logo dan judul */
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Tombol Navigasi */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: #5b92b3;
+  padding: 10px 0;
+}
+
+body.dark .nav-buttons {
+  background-color: #1e3a4c;
+}
+
+.nav-buttons button {
+  background-color: floralwhite;
+  color: #1DA1F2;
+  border: none;
+  padding: 10px 16px;
+  margin: 0 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+body.dark .nav-buttons button {
+  background-color: #2a2a2a;
+  color: #87ceeb;
+}
+
+body.dark .nav-buttons button:hover {
+  background-color: #3a3a3a;
+}
+
+/* Konten */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  padding-bottom: 60px;
+}
+
+body.dark .content {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding-bottom: 60px;
+}
+
+/* Footer */
+.footer {
+  background-color: #5b92b3;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+body.dark .footer {
+  background-color: #1e3a4c;
+}
+
+/* Toggle Dark Mode */
+.toggle {
+  width: 100px;
+  height: 50px;
+  background: #f3f3f3;
+  border-radius: 50px;
+  margin: 1rem auto;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 5px 5px 10px #ccc, inset -5px -5px 10px #fff;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+body.dark .circle {
+  left: 55px;
+  background: #2c2c2f;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  transition: opacity 0.4s;
+}
+
+.sun {
+  color: #FFD600;
+  opacity: 1;
+}
+
+.moon {
+  color: #ffffff;
+  opacity: 0;
+}
+
+body.dark .sun {
+  opacity: 0;
+}
+
+body.dark .moon {
+  opacity: 1;
+}
+ 
